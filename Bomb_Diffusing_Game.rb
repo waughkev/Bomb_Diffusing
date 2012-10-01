@@ -64,10 +64,13 @@ end
 if $detonate > 50
 puts "Danger, getting closer to explosion \n"
 elsif $detonate < 50
-puts "Good, closer to diffusing this \n"
+puts "Good, closer to diffusing this bomb. \n"
 end
 end
+
 #The wires_left variable will be fail safe in case the all the wires are cut and the score is between 1 and 99
+#this will pass out both variables to the next function
+
 $wires_left = wires.size
 return $wires_left
 return $detonate
@@ -79,11 +82,11 @@ def wires_cut(bomb, wired)
 if bomb <= 0 or wired == 0
 puts "You win, the bomb is diffused"
 elsif bomb > 100 
-puts "BOOM!!!!" 
+puts "BOOM!!!! You lose, all your base are belong to us" 
 end
 end
-
-puts"You encounter a bomb, it has a bunch of wires, we need to diffuse it"
+#Start of game
+puts"Someone set us up the bomb, it has a bunch of wires, you need to diffuse it"
 
 wire_cutting()
 wires_cut($detonate, $wires_left)

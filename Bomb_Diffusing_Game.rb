@@ -67,7 +67,7 @@ elsif $detonate < 50
 puts "Good, closer to diffusing this \n"
 end
 end
-#Need to find out how I can pass this variable out of the function.
+#The wires_left variable will be fail safe in case the all the wires are cut and the score is between 1 and 99
 $wires_left = wires.size
 return $wires_left
 return $detonate

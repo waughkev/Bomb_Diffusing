@@ -1,0 +1,1 @@
+This is a decision based game in Ruby that will ask the users to choose wires to cut.

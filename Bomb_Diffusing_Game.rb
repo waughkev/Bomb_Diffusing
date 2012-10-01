@@ -2,9 +2,8 @@ def prompt()
 	print "> "
 end
 
-#Wire_Cutting function to start game. This will handle changing the $detonate value, removing color choicesa on the bomb. 
+#Wire_Cutting function to start game. This will handle changing the $detonate value, removing color choices on the bomb. 
 #Will end when one of the three conditions in the while is not true
-
 def wire_cutting()
 #$detonate variable for game. If it reaches 100, bomb goes off, game over. If it reaches 0, success.
 $detonate = 50
@@ -63,7 +62,7 @@ puts" Not a color"
 end
 
 if $detonate > 50
-puts "Danger, gettign closer to explosion \n"
+puts "Danger, getting closer to explosion \n"
 elsif $detonate < 50
 puts "Good, closer to diffusing this \n"
 end
